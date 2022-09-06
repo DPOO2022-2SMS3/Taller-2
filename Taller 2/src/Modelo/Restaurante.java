@@ -299,6 +299,8 @@ public class Restaurante
 	public void ejecutarAgregarProductoAjustado()
 	{
 		pedidoAct.agregarProducto(productoAct);
+		ProductoMenu temp = new ProductoMenu(null, 0, 0);
+		this.productoAct = new ProductoAjustado(temp);
 	}
 	
 	public Producto getProducto(int idProducto)
